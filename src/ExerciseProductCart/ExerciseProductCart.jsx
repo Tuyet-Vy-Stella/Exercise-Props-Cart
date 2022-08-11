@@ -13,10 +13,10 @@ export default class ExerciseProductCart extends Component {
     return (
       <div className='container'>
         <h1>Exercise Products Cart</h1>
-        <CartModal/>
         <div className='text-end'>
             <span className='text-danger' style={{fontSize:'20px', fontWeight:'bold', cursor:'pointer'}} data-bs-toggle="modal" data-bs-target="#modelId">Giỏ Hàng (0)</span>
         </div>
+        <CartModal />
         <ProductList arrProduct={data}/>
       </div>
     )
